@@ -1,0 +1,7 @@
+name: RS_Booster
+version: '1.0-SNAPSHOT'
+main: de.artur.rs_booster.RS_Booster
+api-version: '1.19'
+
+commands:
+  booster:
