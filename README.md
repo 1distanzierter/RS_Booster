@@ -6,9 +6,11 @@ RS_Booster is a Plugin for a Citybuild Server where Player can activate a Booste
 
 - /booster
 - /booster help
-- /booster adminhelp
 - /booster status
 - /booster info
+
+# Admin Commands
+- /booster adminhelp
 - /booster give
 - /booster remove
 - /booster reset
