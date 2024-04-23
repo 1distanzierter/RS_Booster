@@ -32,7 +32,7 @@ public class BoosterActivate implements Listener {
     @EventHandler
     public void onClick(InventoryClickEvent e) {
         Player p = (Player) e.getWhoClicked();
-        if (p.getOpenInventory().getTitle().equalsIgnoreCase("§6ʙᴏᴏѕᴛᴇʀ ᴍᴇɴü")) {
+        if (p.getOpenInventory().getTitle().equalsIgnoreCase("§6Booster Menü")) {
             e.setCancelled(true);
             if (Objects.requireNonNull(e.getCurrentItem()).getItemMeta().getDisplayName().equalsIgnoreCase("§6Fly Booster")) {
                 if (Booster.getFlyBooster(p.getUniqueId()) >= 1) {
@@ -81,7 +81,7 @@ public class BoosterActivate implements Listener {
                         p.sendMessage(prefix + "§7Du besitzt diesen Booster nicht");
                     }
                 }
-            } if (Objects.requireNonNull(e.getCurrentItem()).getItemMeta().getDisplayName().equalsIgnoreCase("§6Drop Booster")) {
+            }else if (Objects.requireNonNull(e.getCurrentItem()).getItemMeta().getDisplayName().equalsIgnoreCase("§6Drop Booster")) {
                 if (Booster.getDropBooster(p.getUniqueId()) >= 1) {
                     if(!DropBooster) {
                         p.closeInventory();
@@ -115,7 +115,7 @@ public class BoosterActivate implements Listener {
                     p.closeInventory();
                     p.sendMessage(prefix + "§7Du besitzt diesen Booster nicht");
                 }
-            } if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6XP Booster")) {
+            }else if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6XP Booster")) {
                 if (Booster.getXPBooster(p.getUniqueId()) >= 1) {
                     if(!XPBooster) {
                         p.closeInventory();
@@ -149,7 +149,7 @@ public class BoosterActivate implements Listener {
                     p.closeInventory();
                     p.sendMessage(prefix + "§7Du besitzt diesen Booster nicht");
                 }
-            }if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Break Booster")) {
+            }else if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Break Booster")) {
                 if (Booster.getBreakBooster(p.getUniqueId()) >= 1) {
                     if (!BreakBooster) {
                         p.closeInventory();
@@ -185,7 +185,7 @@ public class BoosterActivate implements Listener {
                     p.closeInventory();
                     p.sendMessage(prefix + "§7Du besitzt diesen Booster nicht");
                 }
-            } if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Nachtsicht Booster")) {
+            }else if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Nachtsicht Booster")) {
                 if (Booster.getNightVisionBooster(p.getUniqueId()) >= 1) {
                     if(!NightVisionBooster) {
                         p.closeInventory();
@@ -221,7 +221,7 @@ public class BoosterActivate implements Listener {
                     p.closeInventory();
                     p.sendMessage(prefix + "§7Du besitzt diesen Booster nicht");
                 }
-            } if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Stärke Booster")) {
+            }else if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§6Stärke Booster")) {
                 if (Booster.getStrenghtBooster(p.getUniqueId()) >= 1) {
                     if(!StrenghtBooster) {
                         p.closeInventory();

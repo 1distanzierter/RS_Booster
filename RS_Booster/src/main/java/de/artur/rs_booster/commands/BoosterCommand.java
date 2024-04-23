@@ -33,7 +33,7 @@ public class BoosterCommand implements CommandExecutor {
         if(s instanceof Player) {
             Player p = (Player) s;
             if (args.length == 0) {
-                    Inventory inv = Bukkit.createInventory(null, 9, "§6ʙᴏᴏѕᴛᴇʀ ᴍᴇɴü");
+                    Inventory inv = Bukkit.createInventory(null, 9, "§6Booster Menü");
                     ItemStack amount = new ItemStack(HeadUtil.getCustomSkull("§6Anzahl deiner Booster", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRjMTY0YmFjMjE4NGE3NmExZWU5NjkxMzI0MmUzMzVmMWQ0MTFjYWZmNTEyMDVlYTM5YjIwNWU2ZjhmMDU4YSJ9fX0="));
                     ItemMeta amount_meta = amount.getItemMeta();
                     ArrayList<String> lore = new ArrayList<>();

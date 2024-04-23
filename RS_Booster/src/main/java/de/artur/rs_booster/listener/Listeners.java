@@ -51,11 +51,9 @@ public class Listeners implements Listener {
     @EventHandler
     public void ChangeWorld(PlayerTeleportEvent e) {
         Player p = e.getPlayer();
-        if(p.getWorld().equals(WorldName)) {
-            if (BoosterActivate.FlyBooster) {
+        if (BoosterActivate.FlyBooster) {
                 BoosterActivate.FlyPlayer.add(p);
                 p.setAllowFlight(true);
-            }
         }
     }
 
